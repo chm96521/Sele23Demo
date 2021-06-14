@@ -1,6 +1,6 @@
 package auto.test.tools;
 
-import autoframework.driver.logger.LoggerControler;
+import auto.test.logger.LoggerControler;
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -14,13 +14,12 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
-import static autoframework.driver.logger.LoggerControler.getLogger;
 
 /**
  * Created by lenovo on 2016/11/10.
  */
 public class ExcelUtil {
-    final static LoggerControler log= getLogger(ExcelUtil.class);
+    final static LoggerControler log= LoggerControler.getLogger(ExcelUtil.class);
     //定义一个excel
     private static HSSFWorkbook workbook=null;
     //判断excel的sheet是否存在
@@ -97,7 +96,7 @@ public class ExcelUtil {
     list.add("222")
     <p/>*/
    public static void writeInfoToExcel(String filePath, ArrayList<ArrayList<String>> infos){
-       if(!autoframework.driver.tools.MyFile.fileExist(filePath)){
+       if(!MyFile.fileExist(filePath)){
            ExcelUtil.createExcel1(filePath);
        }
        workbook=new HSSFWorkbook();
@@ -126,7 +125,7 @@ public class ExcelUtil {
 
    public static void writeInfoToExcelByRow(String filePath,int row,ArrayList<ArrayList<String>> infos){
 
-       if (!autoframework.driver.tools.MyFile.fileExist(filePath)){
+       if (!MyFile.fileExist(filePath)){
             ExcelUtil.createExcel1(filePath);
        }
        workbook=new HSSFWorkbook();
@@ -151,7 +150,7 @@ public class ExcelUtil {
    //指定列插入数据
    public static void writeInfoToExcelByCell(String filePath, int cell, ArrayList<ArrayList<String>> infos) {
 //        判断文件是否存在
-       if (!autoframework.driver.tools.MyFile.fileExist(filePath)) {
+       if (!MyFile.fileExist(filePath)) {
            ExcelUtil.createExcel1(filePath);
        }
        workbook = new HSSFWorkbook();

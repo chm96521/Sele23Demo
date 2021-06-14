@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 29.622 s <<< FAILURE! - in TestSuite
+com.cn.com.cn.ActionTest01.actionTest[firefox](2)  Time elapsed: 11.21 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+java.net.SocketTimeoutException: timeout
+Build info: version: '3.9.0', revision: '698b3178f0', time: '2018-02-05T14:26:55.441Z'
+System info: host: 'LAPTOP-7OTNN2LR', ip: '192.168.0.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: driver.version: FirefoxDriver
+	at com.cn.com.cn.ActionTest01.actionTest(ActionTest01.java:24)
+Caused by: java.net.SocketTimeoutException: timeout
+	at com.cn.com.cn.ActionTest01.actionTest(ActionTest01.java:24)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at com.cn.com.cn.ActionTest01.actionTest(ActionTest01.java:24)
+

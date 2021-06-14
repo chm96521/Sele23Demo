@@ -1,16 +1,14 @@
 package auto.test.tools;
 
-import autoframework.driver.logger.LoggerControler;
+import auto.test.logger.LoggerControler;
 
 import java.util.Random;
-
-import static autoframework.driver.logger.LoggerControler.getLogger;
 
 /**
  * Created by lenovo on 2016/11/10.
  */
 public class RandomNum {
-    final static LoggerControler log= getLogger(RandomNum.class);
+    final static LoggerControler log= LoggerControler.getLogger(RandomNum.class);
     public static long getNumRandom(int length){
         //随机数乘以10^n次方
         long num=0;

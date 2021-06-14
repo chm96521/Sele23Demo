@@ -3,14 +3,11 @@
 <suite name="Default Suite" >
   <test  name="Maven_Test01">
     <classes>
-      <class name="com.cn.com.cn.ActionTest01">
+      <class name="com.cn.day03.GridTest">
       <!-- <methods>
         <include name="testData"/>
       </methods>-->
     </class>
-      <!-- 可以引入多个需要执行的测试类
-      <class name="com.cn.day03.GridTest"></class>
-      -->
     </classes>
   </test> <!-- Maven_Test01 -->
 </suite> <!-- Default Suite -->

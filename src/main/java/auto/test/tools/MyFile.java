@@ -1,16 +1,16 @@
 package auto.test.tools;
 
-import autoframework.driver.logger.LoggerControler;
+
+import auto.test.logger.LoggerControler;
 
 import java.io.File;
 
-import static autoframework.driver.logger.LoggerControler.getLogger;
 
 /**
  * Created by lenovo on 2016/11/10.
  */
 public class MyFile {
-    final static LoggerControler log= getLogger(MyFile.class);
+    final static LoggerControler log= LoggerControler.getLogger(MyFile.class);
     //判断文件是否存在
     public static boolean fileExist(String filePath){
         return new File(filePath).exists();
