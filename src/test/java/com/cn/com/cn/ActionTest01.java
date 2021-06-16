@@ -4,6 +4,7 @@ import auto.test.action.Action;
 import auto.test.driver.SeleniumDrivers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -27,6 +28,11 @@ public class ActionTest01 {
         Action.click(SearchPage.loginBtn,"你点击了百度一下");
         Thread.sleep(3000);
         SeleniumDrivers.closed();
+    }
+
+    @Test
+    public void test01(){
+        Assert.assertEquals(2,5);
     }
 
 }
